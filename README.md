@@ -4,7 +4,6 @@
 
 **Plataforma web de venda de jogos digitais com foco em dar visibilidade a desenvolvedores independentes.**
 
-
 [**Acessar o sistema online**](https://SEU-LINK-AQUI) 
 
 </div>
@@ -19,6 +18,7 @@
 - [Perfis de usuário](#perfis-de-usuário)
 - [Tecnologias](#tecnologias)
 - [Arquitetura](#arquitetura)
+- [Estrutura de pastas](#estrutura-de-pastas)
 - [Execução local](#execução-local)
 - [Publicação em hospedagem](#publicação-em-hospedagem)
 - [Equipe](#equipe)
@@ -31,7 +31,7 @@ O **GamesHaven** é uma plataforma de jogos digitais desenvolvida com a arquitet
 
 O projeto tem dois objetivos: **vender jogos** e **ajudar criadores independentes a publicar seus trabalhos e ganhar visibilidade**. Para isso, aplica boas práticas de organização de código, separação de responsabilidades e integração com banco de dados relacional.
 
-> Projeto acadêmico desenvolvido por **NOME DA EQUIPE** no curso de **NOME DO CURSO** — **NOME DA INSTITUIÇÃO**.
+> Projeto acadêmico desenvolvido por **Anna Clara Benicio Rangel e João Victor Emiliano Delfino** no curso de **Informática - RGI61** — **3d Colégios**.
 
 ---
 
@@ -43,6 +43,7 @@ O projeto tem dois objetivos: **vender jogos** e **ajudar criadores independente
 | **Ambiente** | Hospedagem web (PHP + MySQL) |
 | **Repositório** | https://github.com/SEU-USUARIO/gameshaven |
 
+---
 
 ## Funcionalidades
 
@@ -112,8 +113,13 @@ Requisição → Roteador → Controller → Model ⇄ Banco de dados
                             └────→ View → Resposta HTML
 ```
 
-Estrutura de pastas
+---
+
+## Estrutura de pastas
+
 <!-- Estrutura provisória: substituir pela estrutura real do projeto. -->
+
+```
 gameshaven/
 ├── .htaccess              # Reescrita de URLs
 ├── index.php              # Roteador principal
@@ -162,7 +168,8 @@ gameshaven/
 │   └── uploads/avatares/  # Fotos de perfil
 └── db/
     └── gameshaven.sql     # Script completo do banco
-    
+```
+
 ---
 
 ## Execução local
@@ -176,6 +183,7 @@ gameshaven/
 - Navegador web;
 - Git (opcional, para clonar o repositório).
 
+---
 
 **Boas práticas de segurança**
 
@@ -189,8 +197,8 @@ gameshaven/
 
 | Nome | Função | GitHub |
 |------|--------|--------|
-| Nome 1 | Papel no projeto | [@usuario](https://github.com/usuario) |
-| Nome 2 | Papel no projeto | [@usuario](https://github.com/usuario) |
+| Anna Clara Benicio Rangel | 
+| João Victor Emiliano Delfino |
 
 ---
 
@@ -198,6 +206,7 @@ gameshaven/
 
 🍄 **GamesHaven** — KEEP PLAYING. 🎮
 
+</div>
 </div>aDB);
 - Servidor Apache com suporte ao módulo `mod_rewrite`;
 - XAMPP, WAMP ou Laragon (recomendado para facilitar a configuração do ambiente);
