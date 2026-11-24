@@ -1,10 +1,119 @@
-# GamesHaven
+<div align="center">
 
-Plataforma web de venda de jogos digitais com foco em dar visibilidade a desenvolvedores independentes (indie).
+# 🍄 GamesHaven 🎮
 
-## Estrutura do Projeto
+**Plataforma web de venda de jogos digitais com foco em dar visibilidade a desenvolvedores independentes.**
+
+
+[**Acessar o sistema online**](https://SEU-LINK-AQUI) 
+
+</div>
+
+---
+
+## Sumário
+
+- [Sobre o projeto](#sobre-o-projeto)
+- [Acesso ao sistema](#acesso-ao-sistema)
+- [Funcionalidades](#funcionalidades)
+- [Perfis de usuário](#perfis-de-usuário)
+- [Tecnologias](#tecnologias)
+- [Arquitetura](#arquitetura)
+- [Execução local](#execução-local)
+- [Publicação em hospedagem](#publicação-em-hospedagem)
+- [Equipe](#equipe)
+
+---
+
+## 🍄 Sobre o projeto
+
+O **GamesHaven** é uma plataforma de jogos digitais desenvolvida com a arquitetura **MVC (Model-View-Controller)**, utilizando **PHP** e **MySQL**.
+
+O projeto tem dois objetivos: **vender jogos** e **ajudar criadores independentes a publicar seus trabalhos e ganhar visibilidade**. Para isso, aplica boas práticas de organização de código, separação de responsabilidades e integração com banco de dados relacional.
+
+> Projeto acadêmico desenvolvido por **NOME DA EQUIPE** no curso de **NOME DO CURSO** — **NOME DA INSTITUIÇÃO**.
+
+---
+
+## 🎮 Acesso ao sistema
+
+| | |
+|---|---|
+| **Endereço** | https://SEU-LINK-AQUI |
+| **Ambiente** | Hospedagem web (PHP + MySQL) |
+| **Repositório** | https://github.com/SEU-USUARIO/gameshaven |
+
+
+## Funcionalidades
+
+| Área | Descrição |
+|------|-----------|
+| Autenticação | Cadastro e login de usuários |
+| Catálogo | Busca de jogos e página de detalhes com informações completas |
+| Compras | Carrinho, checkout e registro de pedidos |
+| Biblioteca | Biblioteca pessoal com os jogos adquiridos |
+| Avaliações | Usuários podem avaliar os jogos |
+| Criadores | Cadastro complementar como desenvolvedor indie e publicação de jogos |
+| Doações | Criadores recebem doações pelos jogos publicados |
+| Suporte | Canal de contato e painel de acompanhamento e moderação |
+
+---
+
+## Perfis de usuário
+
+O sistema atende três perfis, cada um com suas permissões.
+
+### 👤 Usuário
+- Criar conta e fazer login;
+- Pesquisar jogos e visualizar suas informações;
+- Adicionar títulos ao carrinho e fazer compras;
+- Gerenciar uma biblioteca pessoal;
+- Avaliar jogos;
+- Entrar em contato com o suporte.
+
+### 🍄 Criador
+- Realizar cadastro complementar como desenvolvedor indie;
+- Publicar jogos informando nome, categoria, descrição, imagens e preço;
+- Receber doações por meio dos jogos publicados.
+
+### 🎮 Suporte
+- Acompanhar os jogos publicados;
+- Ajustar a classificação dos jogos;
+- Organizar o catálogo;
+- Atender usuários e criadores.
+
+---
+
+## Tecnologias
+
+| Camada | Tecnologia |
+|--------|------------|
+| Back-end | PHP 8.0+ com PDO |
+| Banco de dados | MySQL 8.0+ ou MariaDB |
+| Servidor | Apache com `mod_rewrite` (URLs amigáveis) |
+| Front-end | HTML e CSS |
+| Arquitetura | MVC |
+
+---
+
+## Arquitetura
+
+O sistema segue o padrão **MVC**, separando responsabilidades em três camadas:
+
+| Camada | Responsabilidade |
+|--------|------------------|
+| **Model** | Regras de negócio e acesso ao banco de dados |
+| **View** | Telas e interface exibidas ao usuário |
+| **Controller** | Recebe a requisição, aciona os models e escolhe a view |
 
 ```
+Requisição → Roteador → Controller → Model ⇄ Banco de dados
+                            │
+                            └────→ View → Resposta HTML
+```
+
+Estrutura de pastas
+<!-- Estrutura provisória: substituir pela estrutura real do projeto. -->
 gameshaven/
 ├── .htaccess              # Reescrita de URLs
 ├── index.php              # Roteador principal
@@ -53,42 +162,43 @@ gameshaven/
 │   └── uploads/avatares/  # Fotos de perfil
 └── db/
     └── gameshaven.sql     # Script completo do banco
-```
+    
+---
 
-## Sobre o Projeto
+## Execução local
 
-O GamesHaven é uma plataforma de jogos digitais desenvolvida com a arquitetura MVC (Model-View-Controller), utilizando PHP e MySQL. O objetivo do projeto é vender jogos e ajudar criadores independentes a publicar seus títulos e ganhar visibilidade, aplicando boas práticas de organização de código, separação de responsabilidades e integração com banco de dados relacional.
-
-O sistema atende três perfis de usuário:
-
-**Usuário**
-
-- Criar conta e realizar login;
-- Pesquisar jogos e visualizar suas informações;
-- Adicionar títulos ao carrinho e efetuar compras;
-- Gerenciar a biblioteca pessoal;
-- Avaliar jogos;
-- Entrar em contato com o suporte.
-
-**Criador**
-
-- Realizar cadastro complementar como desenvolvedor indie;
-- Publicar jogos informando nome, categoria, descrição, imagens e preço;
-- Receber doações por meio dos jogos publicados.
-
-**Suporte**
-
-- Acompanhar os jogos publicados;
-- Ajustar a classificação dos jogos;
-- Organizar o catálogo;
-- Atender usuários e criadores.
-
-## Pré-requisitos
-
-Antes de executar a aplicação localmente, certifique-se de possuir os seguintes programas instalados:
+### Pré-requisitos
 
 - PHP 8.0 ou superior;
 - MySQL 8.0 ou superior (ou compatível com MariaDB);
+- Apache com suporte ao módulo `mod_rewrite`;
+- XAMPP, WAMP ou Laragon (recomendado para facilitar a configuração);
+- Navegador web;
+- Git (opcional, para clonar o repositório).
+
+
+**Boas práticas de segurança**
+
+- Não versione credenciais reais do banco no repositório. Mantenha no GitHub um arquivo de exemplo e o real só no servidor.
+- Troque as senhas padrão das contas de demonstração antes de divulgar o link.
+- Ative HTTPS, que a maioria das hospedagens oferece gratuitamente.
+
+---
+
+## Equipe
+
+| Nome | Função | GitHub |
+|------|--------|--------|
+| Nome 1 | Papel no projeto | [@usuario](https://github.com/usuario) |
+| Nome 2 | Papel no projeto | [@usuario](https://github.com/usuario) |
+
+---
+
+<div align="center">
+
+🍄 **GamesHaven** — KEEP PLAYING. 🎮
+
+</div>aDB);
 - Servidor Apache com suporte ao módulo `mod_rewrite`;
 - XAMPP, WAMP ou Laragon (recomendado para facilitar a configuração do ambiente);
 - Navegador web;
