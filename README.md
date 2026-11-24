@@ -94,18 +94,3 @@ Antes de executar a aplicação localmente, certifique-se de possuir os seguinte
 - Navegador web;
 - Git (opcional, para clonar o repositório).
 
-## Instalação e Configuração
-
-Siga os passos abaixo para executar o projeto em sua máquina.
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/[seu-usuario]/[seu-repositorio].git
-```
-
-2. Caso o banco de dados não seja importado automaticamente:
-   1. Acesse o phpMyAdmin;
-   2. Vá em **Importar**;
-   3. Selecione o arquivo `db/gameshaven.sql`;
-   4. Clique em **Executar**.
