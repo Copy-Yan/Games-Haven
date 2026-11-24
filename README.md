@@ -195,8 +195,8 @@ gameshaven/
 
 ## Equipe
 
-| Nome | Função | GitHub |
-|------|--------|--------|
+| Nome | 
+|------|
 | Anna Clara Benicio Rangel | 
 | João Victor Emiliano Delfino |
 
