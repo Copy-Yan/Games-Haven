@@ -1,0 +1,83 @@
+/* ===== Suporte ===== */
+.titulo-pagina-suporte{
+  font-size: 35px;
+  font-weight: 700;
+  color: var(--text-light);
+  margin: 0 0 12px;
+}
+
+
+.suporte-topo-btns {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+.suporte-topo-btns a {
+  display: flex;
+  background:none;
+  border: 2px solid #C0A9F7;
+  border-radius: 10px;
+  text-align: center;
+  padding: 12px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #C0A9F7;
+  transition: background .15s;
+    
+}
+
+.suporte-topo-btns a:hover {
+  border: none;
+  background: #C0A9F7;
+  color: var(--text-light);
+}
+
+/* ---------- Cartão do formulário de suporte ---------- */
+.support-page .support-card {
+  background: var(--panel-bg);
+  border-radius: 16px;
+  padding: 30px 40px;
+  max-width: 860px;
+  width: 90%;
+  margin: 24px auto;
+  position: relative;
+}
+
+#input-suporte {
+  background: #c7e3ff;
+}
+
+#input-suporte:hover{
+  background: #84abff;
+}
+
+#mensagem-suporte{
+  width:100%; 
+  padding:10px; 
+  border:none; 
+  border-radius:6px; 
+  background: #c7e3ff;   
+  color:var(--text-dark);
+}
+
+#mensagem-suporte:hover{
+  background: #84abff;
+}
+
+#button-suporte{
+  background: #c7e3ff;
+  color:var(--text-dark);
+  border: none;
+}
+
+#button-suporte:hover{
+  background: #84abff;
+}
+
+#form-suporte {
+  background: var(--card-bg);
+  border: 3px solid #C0A9F7;
+}

@@ -1,0 +1,31 @@
+/* ===== Biblioteca do usuário ===== */
+
+.aviso-biblioteca {
+    position: relative;
+    border: 1px solid rgba(167, 239, 241, 0.3);
+    background: linear-gradient(135deg, #FFCEAA, #ffaa6d);
+    border-radius: 8px;
+    padding: 12px 16px;
+    padding-left: 46px;
+    font-size: 13px;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.biblioteca-rodape-jogos{
+  text-align: center;
+  font-size: 13px;
+  color:var(--text-muted);
+}
+
+/* Brilho à esquerda do aviso: posicionado de forma absoluta, para não alterar a altura do box */
+.aviso-brilho {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    margin: 0;
+}

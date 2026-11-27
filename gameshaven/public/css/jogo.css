@@ -1,0 +1,72 @@
+/* ===== Página do jogo ===== */
+
+.detalhe-jogo {
+  display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 32px;
+    align-items: start;
+}
+
+.detalhe-capa {
+  background: #3d3d3d;
+    border-radius: 14px;
+    aspect-ratio: 1.6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    overflow: hidden;
+}
+
+.detalhe-capa img {
+  width: 100%; height: 100%; object-fit: cover;
+}
+
+.detalhe-info h2 {
+  font-size: 26px;
+    font-weight: 700;
+    color: var(--purple-lt);
+    margin: 0 0 12px;
+}
+
+.detalhe-info p {
+  color: var(--white); font-size: 14px;
+}
+
+.detalhe-acoes {
+  display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.preco-tag {
+  display: inline-block;
+    background: #1a1a1a;
+    color: var(--green);
+    border-radius: 6px;
+    padding: 8px 14px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.avaliacoes-caixa {
+  background: var(--card-bg);
+    border-radius: 12px;
+    padding: 18px;
+    margin-top: 26px;
+    min-height: 120px;
+}
+
+.avaliacao-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .detalhe-jogo {
+    grid-template-columns: 1fr;
+  }
+}

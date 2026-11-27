@@ -1,0 +1,87 @@
+/* ===== Sobre ===== */
+
+.direita {
+  text-align: right;
+}
+
+.roxo {
+  color: var(--purple-lt);
+}
+
+.sobre-topo-btns {
+  display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 26px;
+}
+
+.sobre-topo-btns a {
+  background: rgba(255, 255, 255, 0.08);
+    border: 3px solid #47568c;
+    border-radius: 10px;
+    padding: 22px 30px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--white);
+    transition: background .15s;
+}
+
+.sobre-topo-btns a:hover {
+  background:  #47568c;
+}
+
+.sobre-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 18px;
+}
+
+.sobre-card.direita {
+  flex-direction: row-reverse; 
+  text-align: right;
+}
+
+.sobre-card .icone {
+  width: 150px;
+    height: 150px;
+    border-radius: 14px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+
+.sobre-card h3 {
+  margin: 0 0 6px; font-size: 24px; color: #Ffffff
+}
+
+.sobre-card p {
+  margin: 0; font-size: 14px; color: var(--text-muted);
+}
+
+@media (max-width: 600px) {
+  .sobre-card {
+    flex-direction: column; text-align: center;
+  }
+  .sobre-card.direita {
+    flex-direction: column;
+  }
+}
+
+.sobre-card .icone.roxo {
+  background: linear-gradient(135deg, #bd96d8, #8f50bd);
+}
+
+.sobre-card .icone.azul {
+  background: linear-gradient(135deg, #90b5da, #297fd4);
+}
+
+.sobre-card .icone.laranja {
+  background: linear-gradient(135deg, #FFCEAA, #FF9C54);
+}

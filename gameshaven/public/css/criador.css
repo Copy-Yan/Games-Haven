@@ -1,0 +1,339 @@
+/* ===== Painel do admin===== */
+
+.criador-cards {
+  display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0 30px;
+}
+
+.criador-card {
+  background: linear-gradient(135deg, #af76d9, #f2a65a);
+    border-radius: 14px;
+    padding: 26px 30px;
+    min-width: 260px;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    transition: transform .15s;
+}
+
+.criador-card-2 {
+  background: linear-gradient(135deg, #f2a65a, #af76d9);
+    border-radius: 14px;
+    padding: 26px 30px;
+    min-width: 260px;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    transition: transform .15s;
+}
+
+.criador-card:hover, .criador-card-2:hover{
+  transform: translateY(-3px);
+}
+
+.criador-card small, .criador-card-2 small{
+  display: block; 
+  font-weight: 400; 
+  margin-top: 6px; 
+  font-size: 12px; 
+  color: var(--text-dark);
+}
+
+
+table.tabela {
+  width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+table.tabela thead {
+  background: #a888f3; color: var(--text-dark);
+}
+
+table.tabela.laranja thead {
+  background: var(--purple-lt); color: var(--white);
+}
+
+table.tabela th {
+  padding: 12px 14px;
+    text-align: left;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(230, 0, 0, 0.08);
+}
+
+table.tabela td {
+  padding: 12px 14px;
+    text-align: left;
+    font-size: 13px;
+    border-bottom: 1px solid rgba(230, 0, 0, 0.08);
+}
+
+table.tabela img.capa {
+  width: 42px;
+    height: 42px;
+    background: #3d3d3d;
+    border-radius: 4px;
+    display: inline-block;
+    object-fit: cover;
+}
+
+.capa-placeholder {
+  width: 42px;
+    height: 42px;
+    background: #3d3d3d;
+    border-radius: 4px;
+    display: inline-block;
+    object-fit: cover;
+}
+
+table.tabela a.acao {
+  color: var(--cyan); margin-right: 8px;
+}
+
+table.tabela a.acao:hover {
+  text-decoration: underline;
+}
+
+
+.painel input[type=text] {
+  width: 100%;
+    height: 40px;
+    background: var(--input-peach);
+    border: none;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3d5c;
+    margin-bottom: 12px;
+}
+
+.painel input[type=date] {
+  width: 100%;
+    height: 40px;
+    background: var(--input-peach);
+    border: none;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3d5c;
+    margin-bottom: 12px;
+}
+
+
+.painel select {
+  width: 100%;
+    height: 40px;
+    background: var(--input-peach);
+    border: none;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3d5c;
+    margin-bottom: 12px;
+}
+
+.campo-peach {
+  width: 100%;
+    height: 40px;
+    background: var(--input-peach);
+    border: none;
+    border-radius: 6px;
+    padding: 0 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a3d5c;
+    margin-bottom: 12px;
+}
+
+.painel input[type=text]::placeholder {
+  color: rgba(26, 61, 92, 0.5);
+}
+
+.painel input[type=email]::placeholder {
+  color: rgba(26, 61, 92, 0.5);
+}
+
+.painel input[type=password]::placeholder {
+  color: rgba(26, 61, 92, 0.5);
+}
+
+.painel input[type=text]:focus {
+  background:#ffc194;
+}
+
+.painel input[type=email]:focus {
+  background: var(--accent-purple);
+}
+
+.painel input[type=password]:focus {
+  background: var(--accent-purple);
+}
+
+.painel input[type=date]:focus {
+  background: #ffc194;
+}
+
+.painel select:focus {
+  background: #ffc194;
+}
+
+.painel textarea:focus {
+  background: #ffc194;
+}
+
+.painel textarea {
+  width: 100%;
+    background: var(--input-purple);
+    border: none;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 14px;
+    color: #1a3d5c;
+    margin-bottom: 12px;
+    min-height: 90px;
+    resize: vertical;
+}
+
+.painel input[type=checkbox] {
+  width: auto; height: auto; margin: 0; accent-color: var(--pink);
+}
+
+.painel input[type=radio] {
+  width: auto; height: auto; margin: 0; accent-color: var(--pink);
+}
+
+.painel input[type=file] {
+  color: var(--white); font-size: 13px; margin-bottom: 6px;
+}
+
+.painel small {
+  color: var(--text-muted);
+}
+
+.perfil-campos .campo-peach {
+  max-width: 520px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--input-purple);
+  color: var(--text-light);
+  border: none;
+  background: #C0A9F7;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .15s, transform .1s;
+}
+
+.btn:hover {
+  background: var(--accent-purple); 
+  transform: translateY(-1px);
+}
+
+.painel .btn {
+background: #6e81c5;
+color: var(--text-dark);
+border: 1px solid #3042838f;
+}
+
+.painel .btn:hover {
+  background: #3042838f;
+  border: none;
+}
+
+.btn.outline {
+background: #6e81c5;
+color: var(--text-dark);
+border: 1px solid #3042838f;
+}
+
+.btn.outline:hover {
+ background: #3042838f;
+  border: none;
+}
+
+.btn.azul {
+  background: var(--blue-lt); 
+  color: #1a3d5c;
+  border: none;
+  border: 2px solid #435C90; 
+}
+
+.btn.azul:hover {
+  background: #9dc3ea;
+}
+
+.btn.laranja-outline {
+  background: var(--pink);
+    color: #1a1a1a;
+    border-radius: 6px;
+    padding: 12px 26px;
+    font-size: 13px;
+}
+
+.btn.laranja {
+  background: var(--pink);
+    color: #1a1a1a;
+    border-radius: 6px;
+    padding: 12px 26px;
+    font-size: 13px;
+}
+
+.btn.laranja-outline:hover {
+  background: #ff9bd5;
+}
+
+.btn.laranja:hover {
+  background: #ff9bd5;
+}
+
+.btn.small {
+  padding: 7px 14px; 
+  font-size: 14px;
+  color: #e89f6c;
+}
+
+.erro {
+  border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sucesso {
+  border-radius: 8px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.sucesso {
+  background: rgba(0, 188, 94, 0.15);
+    color: var(--green);
+    border: 1px solid rgba(0, 188, 94, 0.3);
+}
+
+.erro {
+  background: rgba(255, 60, 60, 0.15);
+    color: #ff6b6b;
+    border: 1px solid rgba(255, 60, 60, 0.3);
+}
